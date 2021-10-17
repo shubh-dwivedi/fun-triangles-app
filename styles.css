@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #F46666;
+    --secondary-color: #FBAA9D;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    font-family: 'roboto mono', sans-serif;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    margin: auto 10%;
+}
+
+.nav-bar {
+    margin: auto;
+    width: 90%;
+    height: 6rem;
+    border-radius: 0 0 0 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.nav-heading {
+    text-align: left;
+    color: white;
+}
+
+.nav-link {
+    font-size: medium;
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    margin: 3rem 1rem 0 1rem;
+}
+
+.active{
+    font-weight: bolder;
+}
+
+.main-heading {
+    margin: 2rem auto;
+    text-align: center;
+
+}
+
+.containerOne {
+    flex: 1;
+    text-align: center;
+    border: 0.1rem solid rgb(221, 48, 17);
+    margin: 1rem 1rem;
+    padding: 1rem;
+    height: 40vh;
+}
+.containerTwo {
+    flex: 1;
+    text-align: center;
+    border: 0.1rem solid rgb(221, 48, 17);
+    margin: 1rem 1rem;
+    padding: 1rem;
+}
+
+.containerThree {
+    flex: 1;
+    text-align: center;
+    border: 0.1rem solid rgb(221, 48, 17);
+    margin: 1rem 1rem;
+    padding: 1rem;
+}
+
+.containerFour {
+    flex: 1;
+    text-align: center;
+    border: 0.1rem solid rgb(221, 48, 17);
+    margin: 1rem 1rem;
+    padding: 1rem;
+}
+
+.container-main a {
+    font-style: normal;
+    font-size: large;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    border-top: 5px solid #e75f5f;
+    background-color: #fcc9c1;
+}
+
+footer ul  {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0.5rem 1rem;
+}
+
+footer img {
+    width: 3rem;
+    height: 3rem;
+}

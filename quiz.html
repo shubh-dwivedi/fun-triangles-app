@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz on Triangles | fun with triangles</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="istriangle.html" class="nav-link">Is it triangle?</a>
+        <a href="hypotenuse.html" class="nav-link">What's the Hypotenuse?</a>
+        <a href="area.html" class="nav-link">Triangle's Area calculator?</a>
+        <a href="quiz.html" class="nav-link active">Quiz on triangles</a>
+    </nav>
+    <h1 id="heading">Quiz on Triangles?</h1>
+
+    
+        <form class="quiz-form">
+            <div class="question-container">
+                <p>Question one shows here?</p>
+                <label><input type="radio" name="question1" value="45">45&deg;</label>
+                <label><input type="radio" name="question1" value="60">60&deg;</label>
+                <label><input type="radio" name="question1" value="90">90&deg;</label>
+            </div>
+            <div class="question-container">
+                <p>A triangle with one angles as 90&deg; is called?</p>
+                <label><input type="radio" name="question2" value="acute">acute</label>
+                <label><input type="radio" name="question2" value="obtuse">obtuse</label>
+                <label><input type="radio" name="question2" value="right angled">right angled</label>
+            </div>
+        </form>
+    <button id="submit-button">Submit answers</button>
+    <div id="output"></div>
+    
+    <footer>
+        <h2>Socials | @shubhbaalak</h2>
+        <ul>
+            <li> <a href="/"> <img src="images/github.svg" alt="github" class="footer-img"></a></li>
+            <li> <a href="/"><img src="images/twitter-round-color.svg" alt="twitter" class="footer-img"></a></li>
+            <li> <a href="/"><img src="images/linkedin-round-color.svg" alt="linkedin" class="footer-img"></a></li>
+        </ul>
+    </footer>
+
+    <script src="quiz.js" type="text/javascript"></script>
+</body>
+</html>
