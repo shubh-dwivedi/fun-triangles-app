@@ -9,33 +9,41 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="istriangle.html" class="nav-link">Is it triangle?</a>
-        <a href="hypotenuse.html" class="nav-link">What's the Hypotenuse?</a>
-        <a href="area.html" class="nav-link">Triangle's Area calculator?</a>
-        <a href="quiz.html" class="nav-link active">Quiz on triangles</a>
+        <div class="nav-heading"><u>Fun With Triangles</u></div>
+        <ul class="nav-list list-non-bullet">
+            <li class="list-item-inline"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="list-item-inline"><a href="istriangle.html" class="nav-link">Is it triangle?</a></li>
+            <li class="list-item-inline"><a href="hypotenuse.html" class="nav-link">What's the Hypotenuse?</a></li>
+            <li class="list-item-inline"><a href="area.html" class="nav-link">Triangle Area calculator</a></li>
+            <li class="list-item-inline"><a href="quiz.html" class="nav-link active">Quiz on triangles</a></li>
+        </ul>
     </nav>
-    <h1 id="heading">Quiz on Triangles?</h1>
-
-    
+    <div class="quiz-section">
         <form class="quiz-form">
+            <h1 class="heading">Quiz on Triangles</h1>
             <div class="question-container">
-                <p>Question one shows here?</p>
-                <label><input type="radio" name="question1" value="45">45&deg;</label>
-                <label><input type="radio" name="question1" value="60">60&deg;</label>
-                <label><input type="radio" name="question1" value="90">90&deg;</label>
+                    <p class="question">Which angle does not form acute angled triangle?</p>
+                    <div class="answer-options">
+                        <label><input type="radio" name="question1" value="45">45&deg;</label>
+                        <label><input type="radio" name="question1" value="60">60&deg;</label>
+                        <label><input type="radio" name="question1" value="90">90&deg;</label>
+                    </div>
             </div>
             <div class="question-container">
-                <p>A triangle with one angles as 90&deg; is called?</p>
-                <label><input type="radio" name="question2" value="acute">acute</label>
-                <label><input type="radio" name="question2" value="obtuse">obtuse</label>
-                <label><input type="radio" name="question2" value="right angled">right angled</label>
+                    <p>A triangle with a 90&deg; angle is called?</p>
+                    <div class="answer-options">
+                        <label><input type="radio" name="question2" value="acute">acute</label>
+                        <label><input type="radio" name="question2" value="obtuse">obtuse</label>
+                        <label><input type="radio" name="question2" value="right angled">right angled</label>
+                    </div>
             </div>
         </form>
-    <button id="submit-button">Submit answers</button>
-    <div id="output"></div>
+        <button id="submit-button">Submit answers</button>
+        <div id="output"></div>
+    </div>
     
-    <footer>
+    
+    <footer id="footer">
         <h2>Socials | @shubhbaalak</h2>
         <ul>
             <li> <a href="/"> <img src="images/github.svg" alt="github" class="footer-img"></a></li>

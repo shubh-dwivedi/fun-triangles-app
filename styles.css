@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-color: #F46666;
-    --secondary-color: #FBAA9D;
+    --primary-color: wheat;
+    --secondary-color: white;
+    --gap-hypotenuse: 100%-17rem;
 }
 
 body {
-    height: 100%;
-    margin: 0 auto;
+    margin: 0px;
+    min-height: 100vh;
+    flex-direction: column;
     background-color: var(--secondary-color);
     font-family: 'roboto mono', sans-serif;
 }
@@ -15,28 +17,97 @@ body {
 .container-main {
     display: flex;
     flex-direction: row;
-    margin: auto 10%;
+    margin: 2% 10%;
+    height: max-content;
+}
+
+.container {
+    padding: 0rem 1rem;
+    text-align: center;
+}
+
+/* navigation bar styling */
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
 }
 
 .nav-bar {
     margin: auto;
-    width: 90%;
+    margin-top: 0;
+    width: 99%;
     height: 6rem;
-    border-radius: 0 0 0 1rem;
+    border-radius: 0 0 1rem 1rem;
+    border-color: black;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-top: none;
+    /* background-color: var(--primary-color); */
+}
+
+.nav-list {
+    margin: 0 auto;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: end;
+}
+
+.nav-bar .nav-link {
+    text-align: right;
+    list-style-position: inside;
+}
+
+.heading {
     text-align: center;
-    background-color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.angle-input {
+    display: block;
+    margin: 1rem auto;
+}
+
+label {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.side-input {
+    display: block;
+    margin: 1rem auto;
+}
+
+#submit-button {
+    display: block;
+    margin: 1rem auto;
+}
+
+#triangle-check-button {
+    font-size: 1.25rem;
+    margin: 1rem auto;
+    display: block;
 }
 
 .nav-heading {
     text-align: left;
-    color: white;
+    color: black;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    height: 2rem;
 }
 
 .nav-link {
     font-size: medium;
     text-decoration: none;
     font-weight: normal;
-    color: white;
+    color: black;
     margin: 3rem 1rem 0 1rem;
 }
 
@@ -44,10 +115,11 @@ body {
     font-weight: bolder;
 }
 
-.main-heading {
-    margin: 2rem auto;
-    text-align: center;
+/* --------------------------------------- */
 
+.main-heading {
+    margin: 1rem auto 0 auto;
+    text-align: center;
 }
 
 .containerOne {
@@ -56,7 +128,7 @@ body {
     border: 0.1rem solid rgb(221, 48, 17);
     margin: 1rem 1rem;
     padding: 1rem;
-    height: 40vh;
+    height: 17rem;
 }
 .containerTwo {
     flex: 1;
@@ -64,6 +136,7 @@ body {
     border: 0.1rem solid rgb(221, 48, 17);
     margin: 1rem 1rem;
     padding: 1rem;
+    height: 17rem;
 }
 
 .containerThree {
@@ -72,6 +145,7 @@ body {
     border: 0.1rem solid rgb(221, 48, 17);
     margin: 1rem 1rem;
     padding: 1rem;
+    height: 17rem;
 }
 
 .containerFour {
@@ -80,6 +154,7 @@ body {
     border: 0.1rem solid rgb(221, 48, 17);
     margin: 1rem 1rem;
     padding: 1rem;
+    height: 17rem;
 }
 
 .container-main a {
@@ -88,12 +163,65 @@ body {
     text-decoration: none;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.container-triangle-area{
+    text-align: center;
     margin: auto;
+    padding: 1rem;
+    height: 22rem;
+    margin-bottom: calc(100vh - 40.65rem);
+}
+
+.container-triangle-area input{
+    margin: 1rem auto;
+}
+.container-hypotenuse {
+    height: 22rem;
+    min-height: max-content;
+    padding-top: 1rem;
+    margin-bottom: calc(100vh - 39.65rem);
+}
+
+.container-istriangle{
+    height: 25rem;
+    margin-bottom: calc(100vh - 41.58rem);
+}
+
+.quiz-section{
+    height: 22rem;
+    padding-bottom: calc(100vh - 38.6rem);
+}
+
+#calculate-button {
+    display: block;
+    margin: 1rem auto;
+}
+
+
+.question-container p {
+    display: block;
+    text-align: center;
+}
+.quiz-form label{
+    display: inline;
+}
+.answer-options {
+    text-align: center;
+    margin: auto;
+}
+
+#output {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+footer {
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0px;
+    padding: 0.5rem;
+    position:static;
+    height: 10.5rem;
     text-align: center;
     border-top: 5px solid #e75f5f;
     background-color: #fcc9c1;
@@ -112,4 +240,28 @@ footer li {
 footer img {
     width: 3rem;
     height: 3rem;
+}
+
+@media screen and (max-width: 780px){
+    .container-main {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .list-item-inline {
+        display: block;
+    }
+
+    .nav-bar {
+        height: fit-content;
+        padding-bottom: 1rem;
+    }
+
+    .nav-list {
+        text-align: center;
+    }
+
+    footer {
+        padding-bottom: 1rem;
+    }
 }

@@ -5,7 +5,7 @@ const output = document.querySelector("#output");
 
 function calculateAreaOfTriangle() {
     const area = 1/2 * (Number(inputBase.value) * Number(inputHeight.value));
-    output.innerHTML = "Area of the triangle is " + area + " cm<sup>2</sup>"
+    output.innerHTML = "Area of the triangle is " + area.toFixed(2) + " cm<sup>2</sup>"
 }
 
 calculateAreaBtn.addEventListener('click', calculateAreaOfTriangle);

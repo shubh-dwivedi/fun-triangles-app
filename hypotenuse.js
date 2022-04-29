@@ -9,6 +9,6 @@ function calculateSquareSum(sideA, sideB) {
 
 submitButton.addEventListener('click', function calculateHypotenuse() {
     const squareSum = calculateSquareSum(Number(inputSides[0].value), Number(inputSides[1].value));
-    const hypotenuse = Math.sqrt(squareSum);
+    const hypotenuse = Math.sqrt(squareSum).toFixed(2);
     outputResult.innerText = "Length of Hypotenuse is " +hypotenuse+ " cm";
 });
