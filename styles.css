@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-color: wheat;
+    --primary-color: #FFFFF3;
     --secondary-color: white;
+    --borders-color: #7209B7;
+    --borders-color-secondary: #80ECDA;
     --gap-hypotenuse: 100%-17rem;
 }
 
@@ -41,12 +43,13 @@ body {
     margin-top: 0;
     width: 99%;
     height: 6rem;
-    border-radius: 0 0 1rem 1rem;
+    /* border-radius: 0 0 1rem 1rem; */
     border-color: black;
     border-width: 0.1rem;
     border-style: solid;
     border-top: none;
-    /* background-color: var(--primary-color); */
+    border-bottom: 5px solid #030301;
+    background-color: #DCF9F5;
 }
 
 .nav-list {
@@ -54,7 +57,7 @@ body {
     padding-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
-    text-align: end;
+    text-align: center;
 }
 
 .nav-bar .nav-link {
@@ -68,43 +71,31 @@ body {
     margin-bottom: 1rem;
 }
 
-.angle-input {
-    display: block;
-    margin: 1rem auto;
-}
-
 label {
     display: block;
     margin: auto;
     text-align: center;
+    font-weight: bold;
 }
 
-.side-input {
-    display: block;
-    margin: 1rem auto;
-}
-
-#submit-button {
-    display: block;
-    margin: 1rem auto;
-}
-
-#triangle-check-button {
-    font-size: 1.25rem;
-    margin: 1rem auto;
-    display: block;
-}
-
-.nav-heading {
+.nav-heading{
     text-align: left;
-    color: black;
-    padding: 0.5rem;
-    padding-left: 1rem;
+    font-weight: bold;
+    padding: 1rem;
     height: 2rem;
 }
 
+.nav-heading a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.25rem;
+    color: #0093F5;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+}
+
 .nav-link {
-    font-size: medium;
+    font-size: large;
     text-decoration: none;
     font-weight: normal;
     color: black;
@@ -125,36 +116,44 @@ label {
 .containerOne {
     flex: 1;
     text-align: center;
-    border: 0.1rem solid rgb(221, 48, 17);
+    border: 5px solid var(--borders-color-secondary);
+    border-radius: 1rem;
     margin: 1rem 1rem;
     padding: 1rem;
     height: 17rem;
+    position: relative;
 }
 .containerTwo {
     flex: 1;
     text-align: center;
-    border: 0.1rem solid rgb(221, 48, 17);
+    border: 5px solid var(--borders-color-secondary);
+    border-radius: 1rem;
     margin: 1rem 1rem;
     padding: 1rem;
     height: 17rem;
+    position: relative;
 }
 
 .containerThree {
     flex: 1;
     text-align: center;
-    border: 0.1rem solid rgb(221, 48, 17);
+    border: 5px solid var(--borders-color-secondary);
+    border-radius: 1rem;
     margin: 1rem 1rem;
     padding: 1rem;
     height: 17rem;
+    position: relative;
 }
 
 .containerFour {
     flex: 1;
     text-align: center;
-    border: 0.1rem solid rgb(221, 48, 17);
+    border: 5px solid var(--borders-color-secondary);
+    border-radius: 1rem;
     margin: 1rem 1rem;
     padding: 1rem;
     height: 17rem;
+    position: relative;
 }
 
 .container-main a {
@@ -186,45 +185,123 @@ label {
     margin-bottom: calc(100vh - 41.58rem);
 }
 
+.container-main a[class="container-box-heading"]{
+    text-decoration: none;
+    color: #779BE7;
+}
+
 .quiz-section{
-    height: 22rem;
-    padding-bottom: calc(100vh - 38.6rem);
+    height: max-content;
 }
 
-#calculate-button {
-    display: block;
-    margin: 1rem auto;
+.game-description {
+    margin-bottom: 2rem;
 }
 
+.goto-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    padding: 0.25rem 0.5rem;
+    border: 3px solid #00D9C0;
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 0.25rem;
+    left: 26%;
+    align-self: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
 
 .question-container p {
     display: block;
-    text-align: center;
+    width: 50rem;
+    margin: 0.5rem auto;
 }
-.quiz-form label{
-    display: inline;
-}
+
 .answer-options {
-    text-align: center;
+    display: block;
+}
+
+.answer-options label{
+    margin-left: 1.5rem;
+}
+
+.quiz-form {
+    width: 50rem;
     margin: auto;
 }
 
+.quiz-form label{
+    display: inline;
+}
+
+.quiz-section #output {
+    min-height: 5rem;
+}
+
 #output {
+    display: block;
     text-align: center;
     font-size: 1.25rem;
+    color: #4e148c;
+}
+
+#input-base, #input-height {
+    border: 3px solid var(--borders-color-secondary);
+    border-radius: 0.5rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.side-input {
+    margin: 1rem auto;
+    border: 3px solid var(--borders-color-secondary);
+    border-radius: 0.5rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.angle-input {
+    margin: 1rem auto;
+    border: 3px solid var(--borders-color-secondary);
+    border-radius: 0.5rem;
+    height: 2rem;
+    text-align: center;
+}
+
+#check-button {
+    border: 3px solid var(--borders-color-secondary);
+    border-radius: 0.5rem;
+    height: max-content;
+    width: max-content;
+    display: block;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #9d71e8;
+    background-color: aliceblue;
 }
 
 footer {
     display:block;
-    width: 100%;
+    margin: auto;
+    width: 99%;
     box-sizing: border-box;
     bottom: 0px;
     padding: 0.5rem;
     position:static;
     height: 10.5rem;
     text-align: center;
-    border-top: 5px solid #e75f5f;
-    background-color: #fcc9c1;
+    border-top: 5px solid #030301;
+    border-left: 2px solid #030301;
+    border-right: 2px solid #030301;;
+    background-color: #DCF9F5;
+}
+
+#footer-quiz {
+    position: fixed;
 }
 
 footer ul  {
@@ -259,6 +336,15 @@ footer img {
 
     .nav-list {
         text-align: center;
+    }
+
+    .goto-button {
+        margin-bottom: 0.5rem;
+        left: 30%;
+    }
+
+    .container-sections {
+        min-height: 13rem;
     }
 
     footer {

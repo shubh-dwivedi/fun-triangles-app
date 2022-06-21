@@ -1,26 +1,8 @@
 const quizForm = document.querySelector(".quiz-form");
-const submitButton = document.querySelector("#submit-button");
+const submitButton = document.querySelector("#check-button");
 const resultOutput = document.querySelector("#output");
 
-// const quizContainer = document.querySelector(".quiz-section");
-// const footerDiv = document.querySelector("#footer");
-// const navDiv = document.querySelector(".nav-bar");
-// const body = document.querySelector("body");
-
-const correctAnswers = ["90", "right angled"];
-
-// function setFooter() {
-//     const quizHeight = quizContainer.getBoundingClientRect().height;
-// const footerHeight = footerDiv.getBoundingClientRect().height;
-// const navHeight = navDiv.getBoundingClientRect().height;
-
-// var totalHeight = navHeight+quizHeight+footerHeight;
-// var bodyHeight = body.getBoundingClientRect().height;
-// var remainingHeight = (bodyHeight-totalHeight).toFixed(1);
-
-// quizContainer.style.paddingBottom = remainingHeight+'px';
-// }
-
+const correctAnswers = ["90", "right angled", "equilateral triangle", "greater than 90", "1/2(base*height)",];
 
 function calculateScore() {
     let score = 0;

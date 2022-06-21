@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="nav-heading"><u>Fun With Triangles</u></div>
+        <div class="nav-heading"><a href="index.html">Fun With Triangles</a></div>      
         <ul class="nav-list list-non-bullet">
             <li class="list-item-inline"><a href="index.html" class="nav-link">Home</a></li>
             <li class="list-item-inline"><a href="istriangle.html" class="nav-link">Is it triangle?</a></li>
@@ -22,28 +22,62 @@
         <form class="quiz-form">
             <h1 class="heading">Quiz on Triangles</h1>
             <div class="question-container">
-                    <p class="question">Which angle does not form acute angled triangle?</p>
+                    <p class="question">1. An Acute triangle has all angles less than?</p>
                     <div class="answer-options">
-                        <label><input type="radio" name="question1" value="45">45&deg;</label>
-                        <label><input type="radio" name="question1" value="60">60&deg;</label>
-                        <label><input type="radio" name="question1" value="90">90&deg;</label>
+                        <label><input type="radio" name="question1" value="45">45&deg;</label><br>
+                        <label><input type="radio" name="question1" value="60">60&deg;</label><br>
+                        <label><input type="radio" name="question1" value="90">90&deg;</label><br>
+                        <label><input type="radio" name="question1" value="180">180&deg;</label>
+                    </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                    <p>2. A triangle with a 90&deg; angle is called?</p>
+                    <div class="answer-options">
+                        <label><input type="radio" name="question2" value="acute">acute</label><br>
+                        <label><input type="radio" name="question2" value="obtuse">obtuse</label><br>
+                        <label><input type="radio" name="question2" value="right angled">right angled</label><br>
+                        <label><input type="radio" name="question2" value="none of the above">none of the above
+                        </label>
                     </div>
             </div>
             <div class="question-container">
-                    <p>A triangle with a 90&deg; angle is called?</p>
-                    <div class="answer-options">
-                        <label><input type="radio" name="question2" value="acute">acute</label>
-                        <label><input type="radio" name="question2" value="obtuse">obtuse</label>
-                        <label><input type="radio" name="question2" value="right angled">right angled</label>
-                    </div>
+                <p class="question">3. A triangle having all sides equal to 60&deg; is called?</p>
+                <div class="answer-options">
+                    <label><input type="radio" name="question3" value="acute triangle">acute triangle</label><br>
+                    <label><input type="radio" name="question3" value="equilateral triangle">equilateral triangle</label><br>
+                    <label><input type="radio" name="question3" value="obtuse triangle">obtuse triangle</label><br>
+                    <label><input type="radio" name="question3" value="tri-equal triangle">tri-equal triangle</label>
+                </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <p class="question">4. A triangle is an obtuse triangle if it has atleast one angle</p>
+            <div class="answer-options">
+                <label><input type="radio" name="question4" value="less than 60">less than 60&deg;</label><br>
+                <label><input type="radio" name="question4" value="equal to 45">equal to 45&deg;</label><br>
+                <label><input type="radio" name="question4" value="greater than 90">greater than 90&deg;</label><br>
+                <label><input type="radio" name="question4" value="equal to 90">equal to 90&deg;</label>
             </div>
+         </div>
+        <hr>
+        <div class="question-container">
+            <p class="question">5. Formula for calculating an area of a triangle is?</p>
+                <div class="answer-options">
+                <label><input type="radio" name="question5" value="1/2(base+height)">1/2(base+height)</label><br>
+                <label><input type="radio" name="question5" value="base*height">base*height</label><br>
+                <label><input type="radio" name="question5" value="1/2(base*height)">1/2(base*height)</label><br>
+                <label><input type="radio" name="question5" value="1/2(base)+1/2(height)">1/2(base)+1/2(height)</label>
+            </div>
+        </div>
+        <hr>
         </form>
-        <button id="submit-button">Submit answers</button>
+        <button id="check-button" style="margin-top: 2rem;">Submit answers</button>
         <div id="output"></div>
     </div>
     
     
-    <footer id="footer">
+    <footer id="footer" class="footer-quiz">
         <h2>Socials | @shubhbaalak</h2>
         <ul>
             <li> <a href="/"> <img src="images/github.svg" alt="github" class="footer-img"></a></li>
