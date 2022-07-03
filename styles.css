@@ -89,7 +89,7 @@ label {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0.25rem;
-    color: #0093F5;
+    color: #00BECC;
     border: 1px solid black;
     border-bottom: 3px solid black;
 }
@@ -192,6 +192,8 @@ label {
 
 .quiz-section{
     height: max-content;
+    max-width: 50rem;
+    margin: auto;
 }
 
 .game-description {
@@ -225,11 +227,6 @@ label {
 
 .answer-options label{
     margin-left: 1.5rem;
-}
-
-.quiz-form {
-    width: 50rem;
-    margin: auto;
 }
 
 .quiz-form label{
@@ -345,6 +342,10 @@ footer img {
 
     .container-sections {
         min-height: 13rem;
+    }
+
+    .quiz-section {
+        width: auto;
     }
 
     footer {
